@@ -1,10 +1,10 @@
-import express from 'express';
+import { Router } from 'express';
 import OngController from './controllers/OngController';
 import IncidentsController from './controllers/IncidentController';
 import ProfileController from './controllers/ProfileController';
 import SessionController from './controllers/SessionController';
 
-const routes = express.Router();
+const routes = Router();
 const ongController = new OngController();
 const incidentController = new IncidentsController();
 const profileController = new ProfileController();
